@@ -3,7 +3,11 @@ const functions = require('firebase-functions');
 
 admin.initializeApp();
 
-exports.mpesaCallback = functions.https.onRequest((req, res) => {
+/**
+ * This function uses the functions.https.onRequest trigger to listen for incoming HTTP requests. . 
+ * When a request is received, it saves it into firebase database
+ */
+exports.mpesaStkCallback = functions.https.onRequest((req, res) => {
     const data = req.body;
     functions.logger.info("Received Data: ", data, { structuredData: true });
 
