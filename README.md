@@ -1,6 +1,6 @@
 # firebase-mpesa
 Firebase function to receive Mpesa STK Callback
 
-# NB
+# NOTE
 Ensure you have upgraded your firebase project to blaze plan
 
